@@ -157,13 +157,11 @@
 .fontSecondaryRregular {
   font-family: var(--font-family-secondary);
   font-weight: 400;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 .fontSecondaryMedium {
   font-family: var(--font-family-secondary);
   font-weight: 500;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 .flexRow {
@@ -280,7 +278,7 @@ button {
 .secondary-button:hover {
   opacity: 0.8;
 }
-.mac_switch {
+.mac-switch {
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -290,7 +288,7 @@ button {
   border-radius: 20px;
   transition: all 0.3s;
 }
-.mac_switch::after {
+.mac-switch::after {
   content: '';
   position: absolute;
   width: 18px;
@@ -301,13 +299,13 @@ button {
   left: 1px;
   transition: all 0.3s;
 }
-.mac_checkbox:checked + .mac_switch::after {
+.mac-checkbox:checked + .mac-switch::after {
   left: 20px;
 }
-.mac_checkbox:checked + .mac_switch {
+.mac-checkbox:checked + .mac-switch {
   background-color: #67C23A;
 }
-.mac_checkbox {
+.mac-checkbox {
   display: none;
 }
 .container {
@@ -363,7 +361,6 @@ button {
 }
 .header__nav .nav__title {
   font-size: var(--font-size-small);
-  line-height: auto;
   margin-bottom: 6px;
   text-align: center;
   color: var(--secondary-color);
@@ -575,7 +572,7 @@ div.main {
   flex-direction: column;
   overflow: hidden;
 }
-div.main .top_menu {
+div.main__top-menu {
   padding: 19px 30px;
   display: flex;
   flex-direction: row;
@@ -583,19 +580,19 @@ div.main .top_menu {
   align-items: center;
   border-bottom: 1px solid var(--border-color);
 }
-div.main .top_menu__breadcrumbs {
+div.main__top-menu .top-menu__breadcrumbs {
   display: flex;
   flex-direction: row;
   line-height: var(--line-height-secondary);
   color: var(--secondary-color);
 }
-div.main .top_menu__breadcrumbs .breadcrumbs__item {
+div.main__top-menu .top-menu__breadcrumbs .breadcrumbs__item {
   position: relative;
 }
-div.main .top_menu__breadcrumbs .breadcrumbs__item:not(:first-child) {
+div.main__top-menu .top-menu__breadcrumbs .breadcrumbs__item:not(:first-child) {
   padding-left: 20px;
 }
-div.main .top_menu__breadcrumbs .breadcrumbs__item:not(:first-child)::after {
+div.main__top-menu .top-menu__breadcrumbs .breadcrumbs__item:not(:first-child)::after {
   content: '/';
   display: inline;
   position: absolute;
@@ -603,30 +600,30 @@ div.main .top_menu__breadcrumbs .breadcrumbs__item:not(:first-child)::after {
   transform: translateX(-50%);
   font-size: var(--font-size-small);
 }
-div.main .top_menu__breadcrumbs .breadcrumbs__link {
+div.main__top-menu .top-menu__breadcrumbs .breadcrumbs__link {
   font-weight: 500;
   transition: color 0.3s ease-out, background-color 0.3s ease-out, outline-color 0.3s ease-out, opacity 0.3s ease-out, border-color 0.3s ease-out, box-shadow 0.3s ease-out;
   color: var(--primary-text-color);
 }
-div.main .top_menu__breadcrumbs .breadcrumbs__link:hover {
+div.main__top-menu .top-menu__breadcrumbs .breadcrumbs__link:hover {
   opacity: 0.8;
 }
-div.main .top_menu__controls {
+div.main__top-menu .top-menu__controls {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-div.main .top_menu__controls .controls__action {
+div.main__top-menu .top-menu__controls .controls__action {
   display: inline-flex;
   align-items: center;
 }
-div.main .top_menu__controls .controls__button {
+div.main__top-menu .top-menu__controls .controls__button {
   margin-left: 12px;
 }
-div.main .top_menu__controls .controls__checkbox {
+div.main__top-menu .top-menu__controls .controls__checkbox {
   margin-left: 8px;
 }
-div.main .top_menu__controls .controls__button-save::after {
+div.main__top-menu .top-menu__controls .controls__button-save::after {
   content: url('../img/ok.svg');
   display: inline-block;
   margin-left: 8px;
@@ -786,37 +783,37 @@ div.main .main__item .item__info {
   line-height: var(--line-height-details);
   color: var(--secondary-color);
 }
-div.main .right__content {
+div.main__right-content {
   grid-area: right-menu;
   overflow-y: auto;
   height: 100%;
   padding: 24px 0;
 }
-div.main .right__content__title {
+div.main__right-content .right-content__title {
   font-weight: 500;
   font-size: var(--font-size-large);
   line-height: var(--line-height-large);
   margin: 0 20px 17px;
 }
-div.main .right__content__operation-wrapper {
+div.main__right-content .right-content__operation-wrapper {
   padding: 12px 20px;
 }
-div.main .right__content__operation-wrapper:not(:last-child) {
+div.main__right-content .right-content__operation-wrapper:not(:last-child) {
   border-bottom: 1px solid var(--border-color);
 }
-div.main .right__content__operation-wrapper .operation__title {
+div.main__right-content .right-content__operation-wrapper .operation__title {
   font-weight: 500;
   line-height: var(--line-height-large);
   margin-bottom: 12px;
 }
-div.main .right__content__operation-wrapper .operation__list {
+div.main__right-content .right-content__operation-wrapper .operation__list {
   display: flex;
   flex-direction: column;
 }
-div.main .right__content__operation-wrapper .operation__item:not(:last-child) {
+div.main__right-content .right-content__operation-wrapper .operation__item:not(:last-child) {
   margin-bottom: 8px;
 }
-div.main .right__content__operation-wrapper .operation__link {
+div.main__right-content .right-content__operation-wrapper .operation__link {
   padding: 8px;
   display: flex;
   flex-direction: row;
@@ -825,22 +822,22 @@ div.main .right__content__operation-wrapper .operation__link {
   background-color: var(--background-item-color-secondary);
   transition: color 0.3s ease-out, background-color 0.3s ease-out, outline-color 0.3s ease-out, opacity 0.3s ease-out, border-color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
-div.main .right__content__operation-wrapper .operation__link:hover {
+div.main__right-content .right-content__operation-wrapper .operation__link:hover {
   color: var(--white-color);
   background-color: var(--primary-color);
 }
-div.main .right__content__operation-wrapper .operation__link:hover .operation__image {
+div.main__right-content .right-content__operation-wrapper .operation__link:hover .operation__image {
   color: var(--white-color);
   width: 20px;
   height: 20px;
 }
-div.main .right__content__operation-wrapper .operation__link:hover .operation__image path[stroke="white"] {
+div.main__right-content .right-content__operation-wrapper .operation__link:hover .operation__image path[stroke="white"] {
   stroke: var(--primary-color) !important;
 }
-div.main .right__content__operation-wrapper .operation__link:hover .operation__image path[fill="white"] {
+div.main__right-content .right-content__operation-wrapper .operation__link:hover .operation__image path[fill="white"] {
   fill: var(--primary-color) !important;
 }
-div.main .right__content__operation-wrapper .operation__image {
+div.main__right-content .right-content__operation-wrapper .operation__image {
   width: 20px;
   height: 20px;
   margin-right: 10px;
