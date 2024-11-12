@@ -1,0 +1,12 @@
+{
+  "name": "creatium-2",
+  "version": "1.0.0",
+  "scripts": {
+    "watch_less": "less-watch-compiler less css"
+  },
+  "keywords": [],
+  "author": "DkPhobos <kucherya.alexander@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "description": ""
+}
